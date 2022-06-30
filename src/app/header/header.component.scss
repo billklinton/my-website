@@ -1,0 +1,35 @@
+.navbar-brand {
+  color: var(--text-color);
+  font-size: x-large;
+}
+
+.navbar-nav a {
+  color: var(--text-color);
+  font-weight: 450;
+  font-size: large;
+}
+
+.navbar-nav a:hover {
+  color: var(--hover-color);
+}
+
+.active {
+  color: var(--hover-color) !important;
+  font-weight: 700;
+}
+
+hr{
+  margin: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar {
+      display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+      display: none;
+  }
+}
