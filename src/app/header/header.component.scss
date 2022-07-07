@@ -1,35 +1,74 @@
-.navbar-brand {
-  color: var(--text-color);
-  font-size: x-large;
+.background{
+  background: no-repeat center top fixed url(../../assets/images/stars.png);
+
+	-webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  height: 100vh;
+	margin-bottom: 0px;
+	padding: 0px;
 }
 
-.navbar-nav a {
-  color: var(--text-color);
-  font-weight: 450;
-  font-size: large;
+.container { max-width: 1280px; padding: 40px 180px; }
+
+.container .name{
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 75%; /* Adjust this value to move the positioned div up and down */
+  width: 60%; /* Set the width of the positioned div */
 }
 
-.navbar-nav a:hover {
-  color: var(--hover-color);
+.container .title{
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 90%; /* Adjust this value to move the positioned div up and down */
+  width: 60%; /* Set the width of the positioned div */
 }
 
-.active {
-  color: var(--hover-color) !important;
-  font-weight: 700;
-}
+#profile .row > div { margin-bottom: 20px; }
+#profile .row > div img { width: 100%; max-width: 246px; height: auto; }
 
-hr{
-  margin: 0px;
-}
+// @media (max-width: 767px) {
+// 	.background:before {
+// 		bottom: 100px;
+// 		left: 20px;
+// 		right: 20px;
+// 		top: 20px;
+// 	}
+// 	.background .container { top: 20%; padding-top: 0px; }
+// 	.container { padding: 60px 20px; min-width: 280px; }
 
-@media only screen and (max-width: 767px) {
-  .navbar {
-      display: none;
-  }
-}
+// 	#profile .row * { text-align: center; }
+// }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .navbar {
-      display: none;
-  }
-}
+// @media only screen and (orientation: portrait) and (max-width: 767px)  {
+//     .background {
+//       -webkit-background-size: auto 150%;
+//       background-size: auto 150%;//****
+//       background-attachment: scroll;
+//     }
+// }
+// @media only screen and (orientation: landscape) and (max-width: 767px)  {
+
+//     .background {
+//       -webkit-background-size: 150% auto;
+//       background-size: 150% auto;//****
+//       background-attachment: scroll;
+//     }
+
+// 	.background .lead { display: none; }
+// }
