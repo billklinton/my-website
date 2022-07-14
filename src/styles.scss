@@ -34,6 +34,7 @@
   --primary-background-color: #121212;
   --secondary-background-color: #28282b;
   --primary-color: #9771C9;
+  --secondary-color: #c6acec;
   --hover-color: #D4C0F1;
   --font-color: #fff;
   --font-bold-color: rgba(255, 255, 255, 0.87);
@@ -60,6 +61,7 @@ h3{
 
 h5{
   color: var(--hover-color);
+  margin-bottom: 20px;
 }
 
 hr{

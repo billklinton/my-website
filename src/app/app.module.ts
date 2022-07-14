@@ -13,6 +13,7 @@ import { CareersComponent } from './experiences/careers/careers.component';
 import { ToolsComponent } from './abilities/tools/tools.component';
 import { LanguagesComponent } from './abilities/languages/languages.component';
 import { SkillsComponent } from './abilities/skills/skills.component';
+import { AbilitiesTopicComponent } from './shared/abilities-topic/abilities-topic.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SkillsComponent } from './abilities/skills/skills.component';
     CareersComponent,
     ToolsComponent,
     LanguagesComponent,
-    SkillsComponent
+    SkillsComponent,
+    AbilitiesTopicComponent
   ],
   imports: [
     BrowserModule,

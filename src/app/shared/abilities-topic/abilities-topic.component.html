@@ -1,0 +1,27 @@
+<div class="row score">
+  <div class="col-md-3">
+    <span class="font-normal">{{ title }}</span>
+  </div>
+  <div class="col-md-9">
+    <i
+      class="fa-solid fa-rocket"
+      [ngClass]="score > 0 ? 'checked' : 'unchecked'"
+    ></i>
+    <i
+      class="fa-solid fa-rocket"
+      [ngClass]="score > 1 ? 'checked' : 'unchecked'"
+    ></i>
+    <i
+      class="fa-solid fa-rocket"
+      [ngClass]="score > 2 ? 'checked' : 'unchecked'"
+    ></i>
+    <i
+      class="fa-solid fa-rocket"
+      [ngClass]="score > 3 ? 'checked' : 'unchecked'"
+    ></i>
+    <i
+      class="fa-solid fa-rocket"
+      [ngClass]="score > 4 ? 'checked' : 'unchecked'"
+    ></i>
+  </div>
+</div>

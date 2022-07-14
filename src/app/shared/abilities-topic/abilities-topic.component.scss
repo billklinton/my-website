@@ -1,0 +1,19 @@
+.score{
+  margin-top: 10px;
+}
+
+.score:hover .checked{
+  margin-left: 5px;
+  color: var(--primary-color);
+}
+
+.checked{
+  margin: 0px 3px;
+  color: var(--primary-color);
+  transition: all 0.3s;
+}
+
+.unchecked{
+  margin: 0px 4px;
+  color: var(--secondary-color);
+}
