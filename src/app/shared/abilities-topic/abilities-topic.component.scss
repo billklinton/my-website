@@ -1,11 +1,24 @@
-.score{
-  margin-top: 10px;
+.flex-container{
+  margin-top: 7px;
+  padding-top: 2px;
 }
 
-.score:hover .checked{
-  margin-left: 5px;
+.flex-container:hover .checked{
+  margin-right: 5px;
   color: var(--primary-color);
   font-size: 17px;
+}
+
+.flex-container:hover{
+  background-color: var(--secondary-background-color);
+}
+
+.title{
+  margin-right: auto;
+}
+
+.score{
+  margin-left: auto;
 }
 
 .checked{

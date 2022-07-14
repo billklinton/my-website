@@ -1,3 +1,5 @@
+.flex-container > * { flex: 1; }
+
 .profile-image{
   border-radius: 50%;
   width: 235px;
@@ -17,8 +19,4 @@
   color: var(--hover-color);
   cursor: pointer;
   transition: ease-in 0.1s all;
-}
-
-.row{
-  justify-content: center;
 }

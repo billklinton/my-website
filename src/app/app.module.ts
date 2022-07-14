@@ -14,6 +14,7 @@ import { ToolsComponent } from './abilities/tools/tools.component';
 import { LanguagesComponent } from './abilities/languages/languages.component';
 import { SkillsComponent } from './abilities/skills/skills.component';
 import { AbilitiesTopicComponent } from './shared/abilities-topic/abilities-topic.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AbilitiesTopicComponent } from './shared/abilities-topic/abilities-topi
     ToolsComponent,
     LanguagesComponent,
     SkillsComponent,
-    AbilitiesTopicComponent
+    AbilitiesTopicComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
