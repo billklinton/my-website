@@ -1,6 +1,19 @@
 <div>
   <h5>Languages</h5>
-  <app-abilities-topic title="Portuguese (Native)" [score]="5"></app-abilities-topic>
-  <app-abilities-topic title="English (Upper-Intermediate)" [score]="4"></app-abilities-topic>
-  <hr>
+  <div class="row">
+    <div class="col-md-6">
+      <app-abilities-topic
+        title="Portuguese (Native)"
+        [score]="5"
+      ></app-abilities-topic>
+    </div>
+
+    <div class="col-md-6">
+      <app-abilities-topic
+        title="English (Intermediate)"
+        [score]="4"
+      ></app-abilities-topic>
+    </div>
+  </div>
+  <hr />
 </div>

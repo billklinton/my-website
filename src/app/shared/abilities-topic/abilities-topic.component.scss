@@ -5,6 +5,7 @@
 .score:hover .checked{
   margin-left: 5px;
   color: var(--primary-color);
+  font-size: 17px;
 }
 
 .checked{
@@ -15,5 +16,5 @@
 
 .unchecked{
   margin: 0px 4px;
-  color: var(--secondary-color);
+  color: var(--hover-color);
 }
