@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-topic-info',
-  templateUrl: './topic-info.component.html',
-  styleUrls: ['./topic-info.component.scss']
+  selector: 'app-experiences-topic',
+  templateUrl: './experiences-topic.component.html',
+  styleUrls: ['./experiences-topic.component.scss']
 })
-export class TopicInfoComponent implements OnInit {
+export class ExperiencesTopicComponent implements OnInit {
 
   @Input() companySchool!: string;
   @Input() dateStart!: string;

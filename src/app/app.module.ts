@@ -6,10 +6,13 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
-import { TopicInfoComponent } from './shared/topic-info/topic-info.component';
+import { ExperiencesTopicComponent } from './shared/experiences-topic/experiences-topic.component';
 import { AbilitiesComponent } from './abilities/abilities.component';
 import { EducationsComponent } from './experiences/educations/educations.component';
 import { CareersComponent } from './experiences/careers/careers.component';
+import { ToolsComponent } from './abilities/tools/tools.component';
+import { LanguagesComponent } from './abilities/languages/languages.component';
+import { SkillsComponent } from './abilities/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +20,13 @@ import { CareersComponent } from './experiences/careers/careers.component';
     HeaderComponent,
     ProfileComponent,
     ExperiencesComponent,
-    TopicInfoComponent,
+    ExperiencesTopicComponent,
     AbilitiesComponent,
     EducationsComponent,
-    CareersComponent
+    CareersComponent,
+    ToolsComponent,
+    LanguagesComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
