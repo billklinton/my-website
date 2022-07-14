@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
+import { TopicInfoComponent } from './shared/topic-info/topic-info.component';
+import { AbilitiesComponent } from './abilities/abilities.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ProfileComponent,
-    ExperiencesComponent
+    ExperiencesComponent,
+    TopicInfoComponent,
+    AbilitiesComponent
   ],
   imports: [
     BrowserModule,

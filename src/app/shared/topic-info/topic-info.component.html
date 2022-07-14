@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-3">
+    <p class="font-bold">
+      {{ companySchool }}
+    </p>
+    <p class="font-normal">{{ dateStart }} - {{ dateEnd }}</p>
+  </div>
+  <div class="col-md-8 offset-md-1">
+    <p class="font-bold">
+      {{ title }}
+    </p>
+    <p class="font-normal">
+      {{ description }}
+    </p>
+    <span class="font-normal location">
+      <i class="fa-solid fa-location-dot icon-location"></i>
+      {{ location }}
+    </span>
+    |
+    <span class="font-normal">
+      <a href="{{ link }}" target="_blank"
+        ><i class="fa-thin fa-link icon-link"></i>{{ link }}</a>
+    </span>
+  </div>
+</div>
