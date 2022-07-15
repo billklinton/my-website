@@ -1,0 +1,25 @@
+.flex-container{
+  border: 2px solid var(--font-normal-color);
+  border-radius: 3%;
+  padding: 12px;
+  margin-right: 17px;
+}
+
+.flex-container:hover{
+  cursor: pointer;
+  border: 2px solid var(--font-bold-color);
+  transition: ease-in 0.1s all;
+}
+
+.flex-container:hover a{
+  color: var(--font-bold-color);
+  text-decoration: none;
+}
+
+a{
+  color: var(--font-normal-color);
+}
+
+i{
+  padding-right: 15px;
+}

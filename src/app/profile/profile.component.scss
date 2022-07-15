@@ -1,22 +1,12 @@
 .flex-container > * { flex: 1; }
 
+.flex-container .buttons{
+  align-content: center;
+  margin: 25px 15px;
+}
+
 .profile-image{
   border-radius: 50%;
   width: 235px;
   height: 235px;
-}
-
-.icons-row{
-  margin: 25px 0px;
-}
-
-.icon {
-  color: var(--button-color);
-  transition: ease-in 0.1s all;
-}
-
-.icon:hover {
-  color: var(--hover-color);
-  cursor: pointer;
-  transition: ease-in 0.1s all;
 }

@@ -17,6 +17,7 @@ import { AbilitiesTopicComponent } from './shared/abilities-topic/abilities-topi
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectsTopicComponent } from './shared/projects-topic/projects-topic.component';
 import { ContactComponent } from './contact/contact.component';
+import { ButtonComponent } from './shared/button/button.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ContactComponent } from './contact/contact.component';
     AbilitiesTopicComponent,
     ProjectsComponent,
     ProjectsTopicComponent,
-    ContactComponent
+    ContactComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
