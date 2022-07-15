@@ -40,6 +40,7 @@
   --font-bold-color: rgba(255, 255, 255, 0.87);
   --font-normal-color: rgba(255, 255, 255, 0.7);
   --button-color: #ffffff;
+  --link-color: #90CAF9;
 }
 
 
@@ -61,7 +62,6 @@ h3{
 
 h5{
   color: var(--hover-color);
-  margin-bottom: 20px;
 }
 
 hr{
@@ -70,7 +70,7 @@ hr{
 }
 
 a {
-  color: var(--font-normal-color);
+  color: #90CAF9;
   font-size: 14px;
   font-weight: 100;
   transition: ease-in 0.1s all;
@@ -78,10 +78,15 @@ a {
 }
 
 a:hover {
-  color: var(--hover-color);
+  color: var(--link-color);
   cursor: pointer;
   transition: ease-in 0.1s all;
   text-decoration: underline;
+}
+
+.icon-link{
+  color: #42A5F5;
+  margin-right: 15px;
 }
 
 .flex-container{
@@ -111,4 +116,8 @@ a:hover {
 
 .content{
   margin: 80px 220px;
+}
+
+.ability{
+  margin-bottom: 45px;
 }

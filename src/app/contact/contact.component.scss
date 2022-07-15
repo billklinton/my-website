@@ -1,0 +1,13 @@
+a{
+  color: var(--font-normal-color);
+}
+
+a:hover{
+  color: var(--font-bold-color);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.link{
+  margin-top: 18px;
+}
