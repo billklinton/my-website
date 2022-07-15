@@ -121,3 +121,18 @@ a:hover {
 .ability{
   margin-bottom: 45px;
 }
+
+@media (max-width: 898px) {
+	.content{
+    margin: 20px;
+  }
+
+  .first-column{
+    width: 100%;
+  }
+
+  .second-column{
+    width: 100%;
+    margin-left: 35px;
+  }
+}

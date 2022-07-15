@@ -1,23 +1,26 @@
-.background{
+.background {
   background: no-repeat center top fixed url(../../assets/images/stars.png);
 
-	-webkit-background-size: 100%;
+  -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100vh;
-	margin-bottom: 0px;
-	padding: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
 }
 
-.container { max-width: 1280px; padding: 40px 180px; }
+.container {
+  max-width: 1280px;
+  padding: 40px 180px;
+}
 
-.container .name{
+.container .name {
   position: absolute;
   z-index: 999;
   margin: 0 auto;
@@ -28,7 +31,7 @@
   width: 60%; /* Set the width of the positioned div */
 }
 
-.container .title{
+.container .title {
   position: absolute;
   z-index: 999;
   margin: 0 auto;
@@ -39,36 +42,58 @@
   width: 60%; /* Set the width of the positioned div */
 }
 
-#profile .row > div { margin-bottom: 20px; }
-#profile .row > div img { width: 100%; max-width: 246px; height: auto; }
+#profile .row > div {
+  margin-bottom: 20px;
+}
+#profile .row > div img {
+  width: 100%;
+  max-width: 246px;
+  height: auto;
+}
 
-// @media (max-width: 767px) {
-// 	.background:before {
-// 		bottom: 100px;
-// 		left: 20px;
-// 		right: 20px;
-// 		top: 20px;
-// 	}
-// 	.background .container { top: 20%; padding-top: 0px; }
-// 	.container { padding: 60px 20px; min-width: 280px; }
+.flex-container {
+  height: 80px;
+  width: 110px;
+  position: absolute;
+  bottom: 0px;
+  right: 4%;
+  background-color: var(--secondary-background-color);
+  z-index: 6;
+  align-items: center;
+  justify-content: center;
+}
 
-// 	#profile .row * { text-align: center; }
-// }
+.menu-scroll .fa-solid {
+  color: var(--font-bold-color);
+  font-size: 40px;
 
-// @media only screen and (orientation: portrait) and (max-width: 767px)  {
-//     .background {
-//       -webkit-background-size: auto 150%;
-//       background-size: auto 150%;//****
-//       background-attachment: scroll;
-//     }
-// }
-// @media only screen and (orientation: landscape) and (max-width: 767px)  {
+  animation-name: up-down;
+  animation-duration: 1.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
 
-//     .background {
-//       -webkit-background-size: 150% auto;
-//       background-size: 150% auto;//****
-//       background-attachment: scroll;
-//     }
+.navbar {
+  border: 0px;
+  background-color: var(--secondary-background-color);
+  position: fixed;
+  top: 100%;
+  right: 4%;
+  width: 110px;
+  z-index: 999;
+}
 
-// 	.background .lead { display: none; }
-// }
+@keyframes up-down {
+  0% {
+    padding-top: 10px;
+  }
+
+  50% {
+    padding-top: 28px;
+  }
+
+  100% {
+    padding-top: 10px;
+  }
+}
