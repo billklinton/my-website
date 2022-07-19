@@ -18,6 +18,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ProjectsTopicComponent } from './shared/projects-topic/projects-topic.component';
 import { ContactComponent } from './contact/contact.component';
 import { ButtonComponent } from './shared/button/button.component';
+import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ButtonComponent } from './shared/button/button.component';
     ProjectsComponent,
     ProjectsTopicComponent,
     ContactComponent,
-    ButtonComponent
+    ButtonComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,49 @@
+.floating-nav-bar-wrapper {
+  background-color: var(--secondary-background-color);
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  right: 3%;
+  height: 314px;
+  width: 140px;
+}
+
+.fixed {
+  position: fixed;
+  top: 80px;
+}
+
+.active{
+  background-color: #38383a;
+}
+
+.floating-nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu{
+  padding: 19px 10px;
+}
+
+.floating-nav-bar a {
+  color: var(--font-normal-color);
+  font-size: 15px;
+}
+
+.floating-nav-bar a:hover{
+  color: var(--font-bold-color);
+  font-size: 17px;
+  text-decoration: none;
+}
+
+hr{
+  color: #38383a;
+  margin: 0px;
+  padding: 0px;
+}
+
+.fixed hr{
+  display: none;
+}

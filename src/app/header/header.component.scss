@@ -53,10 +53,10 @@
 
 .flex-container {
   height: 80px;
-  width: 110px;
+  width: 140px;
   position: absolute;
   bottom: 0px;
-  right: 4%;
+  right: 3%;
   background-color: var(--secondary-background-color);
   z-index: 6;
   align-items: center;
@@ -72,16 +72,6 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: normal;
-}
-
-.navbar {
-  border: 0px;
-  background-color: var(--secondary-background-color);
-  position: fixed;
-  top: 100%;
-  right: 4%;
-  width: 110px;
-  z-index: 999;
 }
 
 @keyframes up-down {
