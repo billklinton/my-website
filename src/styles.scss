@@ -127,12 +127,16 @@ a:hover {
     margin: 20px;
   }
 
+  .flex-container{
+    flex-direction: column;
+  }
+
   .first-column{
-    width: 100%;
+    width: auto;
   }
 
   .second-column{
-    width: 100%;
-    margin-left: 35px;
+    width: auto;
+    margin-left: 0px;
   }
 }

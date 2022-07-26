@@ -19,3 +19,22 @@
 .icon-location{
   color: #4CAF50;
 }
+
+.extra-info{
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 898px) {
+  .flex-container{
+    flex-direction: row;
+  }
+
+  .extra-info{
+    flex-direction: column;
+  }
+
+  .pipe{
+    display: none;
+  }
+}

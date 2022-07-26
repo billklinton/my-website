@@ -14,9 +14,14 @@
   margin-left: 50px;
 }
 
-// @media (max-width: 767px) {
-// 	.project-image{
-//     width: 325px;
-//     height: 275px;
-//   }
-// }
+@media (max-width: 767px) {
+  .flex-column{
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+
+	.project-image{
+    width: 325px;
+    height: 275px;
+  }
+}

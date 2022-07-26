@@ -14,6 +14,7 @@ export class ExperiencesTopicComponent implements OnInit {
   @Input() description!: string;
   @Input() location!: string;
   @Input() link!: string;
+  @Input() linkText!: string;
 
   constructor() { }
 

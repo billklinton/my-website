@@ -11,6 +11,7 @@ export class ProjectsTopicComponent implements OnInit {
   @Input() description!: string;
   @Input() imageUrl!: string;
   @Input() link!: string;
+  @Input() linkText!: string;
 
   constructor() { }
 

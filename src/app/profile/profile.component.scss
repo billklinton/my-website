@@ -10,3 +10,11 @@
   width: 235px;
   height: 235px;
 }
+
+@media (max-width: 898px) {
+
+  .buttons{
+    flex-direction: row;
+    align-content: center;
+  }
+}
