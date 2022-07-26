@@ -19,6 +19,7 @@ import { ProjectsTopicComponent } from './shared/projects-topic/projects-topic.c
 import { ContactComponent } from './contact/contact.component';
 import { ButtonComponent } from './shared/button/button.component';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
     ProjectsTopicComponent,
     ContactComponent,
     ButtonComponent,
-    NavBarComponent
+    NavBarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

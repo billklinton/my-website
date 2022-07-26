@@ -8,19 +8,58 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class NavBarComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.activeMenu();
+  }
 
   @HostListener('window:scroll', ['$event']) scrollHandler(event: Event) {
     var offsetTop = document.getElementById('menu-scroll')!.offsetTop;
 
     if (window.scrollY > offsetTop) {
-      document.getElementById('nav-bar')?.classList.add('fixed');
+      this.addClassByElementId('nav-bar', 'fixed');
       return;
     }
-    document.getElementById('nav-bar')?.classList.remove('fixed');
+    this.removeClassByElementId('nav-bar', 'fixed');
+
+    // window.location.hash = document.getElementById('.nav .active a')?. attr('href').replace('#', '#/');
   }
 
-  activeClass(){
+  activeMenu() {
+    this.isElementVisible('profile');
+    this.isElementVisible('experiences');
+    this.isElementVisible('abilities');
+    this.isElementVisible('projects');
+    this.isElementVisible('contact');
+  }
 
+  isElementVisible(id: string) {
+    const el = document.querySelector(`#${id}`);
+    const observer = new window.IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          var elem = document.getElementsByClassName('active')
+          console.log(elem[0].id)
+          this.removeClassByElementId(elem[0].id, 'active');
+          this.addClassByElementId(`${id}Link`, 'active');
+          return;
+        }
+        this.removeClassByElementId(`${id}Link`, 'active');
+        return;
+      },
+      {
+        root: null,
+        threshold: 0.2
+      }
+    );
+
+    observer.observe(el!);
+  }
+
+  addClassByElementId(elementId: string, classToAdd: string) {
+    document.getElementById(elementId)?.classList.add(classToAdd);
+  }
+
+  removeClassByElementId(elementId: string, classToRemove: string) {
+    document.getElementById(elementId)?.classList.remove(classToRemove);
   }
 }
