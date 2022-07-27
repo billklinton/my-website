@@ -20,19 +20,17 @@ export class NavBarComponent implements OnInit {
       return;
     }
     this.removeClassByElementId('nav-bar', 'fixed');
-
-    // window.location.hash = document.getElementById('.nav .active a')?. attr('href').replace('#', '#/');
   }
 
   activeMenu() {
-    this.isElementVisible('profile');
-    this.isElementVisible('experiences');
-    this.isElementVisible('abilities');
-    this.isElementVisible('projects');
-    this.isElementVisible('contact');
+    this.isNavbarElementActive('profile');
+    this.isNavbarElementActive('experiences');
+    this.isNavbarElementActive('abilities');
+    this.isNavbarElementActive('projects');
+    this.isNavbarElementActive('contact');
   }
 
-  isElementVisible(id: string) {
+  isNavbarElementActive(id: string) {
     const el = document.querySelector(`#${id}`);
     const observer = new window.IntersectionObserver(
       ([entry]) => {
@@ -48,7 +46,7 @@ export class NavBarComponent implements OnInit {
       },
       {
         root: null,
-        threshold: 0.2
+        threshold: 0.3
       }
     );
 
