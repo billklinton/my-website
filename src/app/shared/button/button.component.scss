@@ -1,8 +1,9 @@
 .flex-container{
   border: 2px solid var(--font-normal-color);
   border-radius: 3%;
-  padding: 12px;
+  padding: 11px 0px;
   margin-right: 17px;
+  font-weight: 100;
 }
 
 .flex-container:hover{
@@ -20,6 +21,7 @@ a{
   color: var(--font-normal-color);
 }
 
-i{
-  padding-right: 8px;
+
+span{
+  margin: 5px 7px;
 }
