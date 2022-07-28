@@ -35,9 +35,8 @@ export class NavBarComponent implements OnInit {
     const observer = new window.IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          var elem = document.getElementsByClassName('active')
-          console.log(elem[0].id)
-          this.removeClassByElementId(elem[0].id, 'active');
+          var lastActiveElement = document.getElementsByClassName('active')
+          this.removeClassByElementId(lastActiveElement[0].id, 'active');
           this.addClassByElementId(`${id}Link`, 'active');
           return;
         }
@@ -46,7 +45,7 @@ export class NavBarComponent implements OnInit {
       },
       {
         root: null,
-        threshold: 0.3
+        threshold: 0.2
       }
     );
 
