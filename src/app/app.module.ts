@@ -20,6 +20,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ButtonComponent } from './shared/button/button.component';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
+import { NavBarMobileComponent } from './shared/nav-bar-mobile/nav-bar-mobile.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { FooterComponent } from './footer/footer.component';
     ContactComponent,
     ButtonComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    NavBarMobileComponent
   ],
   imports: [
     BrowserModule,

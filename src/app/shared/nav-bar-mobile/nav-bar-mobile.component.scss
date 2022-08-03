@@ -1,0 +1,36 @@
+.navbar-mobile{
+  background-color: var(--secondary-background-color);
+  display: none;
+}
+
+.navbar-mobile a {
+  color: var(--font-normal-color);
+  font-size: 15px;
+}
+
+.navbar-mobile a:hover{
+  color: var(--font-bold-color);
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.menu{
+  padding: 19px 10px;
+}
+
+hr{
+  margin: 0.5px;
+  display: none;
+}
+
+@media (max-width: 898px) {
+  .navbar-mobile{
+    display: flex;
+    top: 100%;
+  }
+
+  hr{
+    margin-top: 0.5px;
+    display: flex;
+  }
+}
