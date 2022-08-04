@@ -2,17 +2,11 @@
   <h5>Languages</h5>
   <div class="flex-container">
     <div class="first-column">
-      <app-abilities-topic
-        title="Portuguese (Native)"
-        [score]="5"
-      ></app-abilities-topic>
+      <app-abilities-topic *ngFor="let language of firstColumnLanguages" [title]="language.title" [score]="language.score"></app-abilities-topic>
     </div>
 
     <div class="second-column">
-      <app-abilities-topic
-        title="English (Intermediate)"
-        [score]="4"
-      ></app-abilities-topic>
+      <app-abilities-topic *ngFor="let language of secondColumnLanguages" [title]="language.title" [score]="language.score"></app-abilities-topic>
     </div>
   </div>
 </div>

@@ -2,25 +2,10 @@
   <h5>Skills</h5>
   <div class="flex-container">
     <div class="first-column">
-      <app-abilities-topic title="C#" [score]="5"></app-abilities-topic>
-      <app-abilities-topic title=".NET Core" [score]="5"></app-abilities-topic>
-      <app-abilities-topic title="Entity Framework" [score]="4"></app-abilities-topic>
-      <app-abilities-topic title="Dapper" [score]="4"></app-abilities-topic>
-      <app-abilities-topic title="SQLServer" [score]="4"></app-abilities-topic>
-      <app-abilities-topic title="MySql" [score]="3"></app-abilities-topic>
-      <app-abilities-topic title="Firebird" [score]="3"></app-abilities-topic>
-      <app-abilities-topic title="PostgreSQL" [score]="3"></app-abilities-topic>
-      <app-abilities-topic title="MongoDB" [score]="3"></app-abilities-topic>
+      <app-abilities-topic *ngFor="let tool of firstColumnSkills" [title]="tool.title" [score]="tool.score"></app-abilities-topic>
     </div>
     <div class="second-column">
-      <app-abilities-topic title="RabbitMQ" [score]="3"></app-abilities-topic>
-      <app-abilities-topic title="Kafka" [score]="2"></app-abilities-topic>
-      <app-abilities-topic title="MediatR" [score]="4"></app-abilities-topic>
-      <app-abilities-topic title="Unit Tests" [score]="4"></app-abilities-topic>
-      <app-abilities-topic title="Angular" [score]="2"></app-abilities-topic>
-      <app-abilities-topic title="Typescript" [score]="2"></app-abilities-topic>
-      <app-abilities-topic title="Bootstrap" [score]="2"></app-abilities-topic>
-      <app-abilities-topic title="Flutter" [score]="3"></app-abilities-topic>
+      <app-abilities-topic *ngFor="let tool of secondColumnSkills" [title]="tool.title" [score]="tool.score"></app-abilities-topic>
     </div>
   </div>
 </div>

@@ -1,24 +1,15 @@
 <div>
   <h5>Educations</h5>
-      <app-experiences-topic
-        companySchool="Faculdade Pitágoras"
-        dateStart="Jan 2016"
-        dateEnd="Dec 2019"
-        title="Bachelor - Computer Science"
-        description=""
-        location="Betim - MG"
-        link="https://www.pitagoras.com.br"
-        linkText="pitagoras.com.br"
-      ></app-experiences-topic>
-      <app-experiences-topic
-        companySchool="Senai"
-        dateStart="Jul 2013"
-        dateEnd="Jan 2015"
-        title="Technical Course - Computer Science"
-        description=""
-        location="Contagem - MG"
-        link="https://www.senaimg.com.br"
-        linkText="senaimg.com.br"
-      ></app-experiences-topic>
-      <hr />
+  <app-experiences-topic
+    *ngFor="let education of educations"
+    [companySchool]="education.companySchool"
+    [dateStart]="education.dateStart"
+    [dateEnd]="education.dateEnd"
+    [title]="education.title"
+    [description]="education.description"
+    [location]="education.location"
+    [link]="education.link"
+    [linkText]="education.linkText"
+  ></app-experiences-topic>
+  <hr />
 </div>
