@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarMobileComponent implements OnInit {
 
-  constructor() { }
+  stickNavbar = false;
 
   ngOnInit(): void {
+    this.ObserveStickyNavBar();
   }
 
+  ObserveStickyNavBar() {
+    const observer = new window.IntersectionObserver(
+      ([entry]) => {
+        entry.isIntersecting ? this.stickNavbar = false : this.stickNavbar = true;
+      },
+      {
+        root: null,
+        threshold: 0.7,
+      }
+    );
+    observer.observe(document.querySelector('#menu-scroll')!);
+  }
 }
