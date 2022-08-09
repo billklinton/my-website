@@ -3,3 +3,9 @@ hr {
   margin: 0px;
   opacity: 100%;
 }
+
+@media (max-width: 898px) {
+  hr{
+    margin: 0.5px 0px;
+  }
+}
