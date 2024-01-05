@@ -8,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class CareersComponent implements OnInit {
   careers = [
     {
+      companySchool: 'Banco Carrefour',
+      dateStart: 'Aug 2022',
+      dateEnd: 'current',
+      title: '.Net Developer',
+      description: "- Development and maintenance of the company's microservices, using the following technologies:\n\n.NET Core, MongoDB, GraphQL, Kafka, Google Cloud Platform, Google Pub/Sub, RabbitMQ, SQLServer, Apigee, Gitlab, Jenkins and Openshift;",
+      location: 'São Paulo - SP',
+      link: 'https://www.carrefoursolucoes.com.br',
+      linkText: 'carrefoursolucoes.com.br',
+    },
+    {
       companySchool: 'InMetrics',
       dateStart: 'Jul 2021',
-      dateEnd: 'current',
+      dateEnd: 'Aug 2022',
       title: '.Net Developer',
       description:
         'Development of new systems and features for brazilian banks, using the following technologies:\n\n- Banco Neon: .NET Core, RabbitMQ, Kafka, MongoDB, SQLServer, GoCD and Rancher.\n- Banco Carrefour: .NET Core, RabbitMQ, SQLServer, Apigee, Jenkins and Openshift.',
