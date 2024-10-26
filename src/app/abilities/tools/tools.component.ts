@@ -7,23 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolsComponent implements OnInit {
   firstColumnTools = [
+    { title: 'Git', score: 4 },
+    { title: 'Google Cloud Platform', score: 3 },
+    { title: 'Docker', score: 3 },
     { title: 'Openshift', score: 3 },
-    { title: 'Jenkins', score: 2 },
     { title: 'Apigee', score: 2 },
-    { title: 'Azure', score: 2 },
-    { title: 'AWS', score: 2 },
-    { title: 'Heroku', score: 2 },
-    { title: 'Firebase', score: 2 },
-    { title: 'Rancher', score: 1 },
-    { title: 'GoCD', score: 1 },
+    { title: 'AWS', score: 2 }
   ];
 
   secondColumnTools = [
-    { title: 'Git', score: 4 },
-    { title: 'Docker', score: 3 },
     { title: 'Jira', score: 3 },
     { title: 'Scrum', score: 3 },
     { title: 'Kanban', score: 3 },
+    { title: 'Azure', score: 2 },
+    { title: 'Heroku', score: 2 },
+    { title: 'Firebase', score: 2 }
   ];
 
   constructor() {}

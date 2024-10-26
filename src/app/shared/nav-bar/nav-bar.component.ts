@@ -14,7 +14,7 @@ export class NavBarComponent implements OnInit {
     { navText: 'Profile', navLink: '#profile' },
     { navText: 'Experiences', navLink: '#experiences' },
     { navText: 'Abilities', navLink: '#abilities' },
-    { navText: 'Projects', navLink: '#projects' },
+    //{ navText: 'Projects', navLink: '#projects' },
     { navText: 'Contact', navLink: '#contact' },
   ];
 
